@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #111;
+    color: #fff;
+  
+    font-family: Arial, Helvetica, sans-serif;
+  
+    line-height: 1.5;
+  }
+  
+  
+  /* NAVIGATION */
+  
+  header {
+    border-bottom: 1px solid #333;
+  }
+  
+  nav {
+    max-width: 1100px;
+    margin: auto;
+  
+    padding: 25px 20px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h2 {
+    font-size: 24px;
+  }
+  
+  nav h2 span {
+    color: #b8ff3d;
+  }
+  
+  .links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .links a {
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    color: white;
+  }
+  
+  
+  /* GENERAL */
+  
+  section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 120px 20px;
+  }
+  
+  .small-text {
+    color: #b8ff3d;
+  
+    font-size: 12px;
+  
+    font-weight: bold;
+  
+    letter-spacing: 2px;
+  
+    margin-bottom: 20px;
+  }
+  
+  
+  /* HERO */
+  
+  .hero {
+    min-height: 80vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .hero h1 {
+    font-size: clamp(60px, 10vw, 120px);
+  
+    line-height: .9;
+  
+    letter-spacing: -5px;
+  
+    margin-bottom: 30px;
+  }
+  
+  .hero h1 span {
+    color: #b8ff3d;
+  }
+  
+  .intro {
+    color: #aaa;
+  
+    max-width: 500px;
+  
+    font-size: 18px;
+  
+    margin-bottom: 30px;
+  }
+  
+  
+  /* BUTTON */
+  
+  .button {
+    display: inline-block;
+  
+    background: #b8ff3d;
+  
+    color: #111;
+  
+    padding: 13px 20px;
+  
+    border-radius: 5px;
+  
+    font-weight: bold;
+  
+    text-decoration: none;
+  
+    transition: .2s;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  
+  /* WORK */
+  
+  .section-title {
+    font-size: 55px;
+  
+    line-height: 1;
+  
+    letter-spacing: -3px;
+  
+    margin-bottom: 50px;
+  }
+  
+  .projects {
+    display: grid;
+  
+    grid-template-columns: 1fr 1fr;
+  
+    gap: 40px;
+  }
+  
+  .project-image {
+    height: 300px;
+  
+    margin-bottom: 20px;
+  
+    border-radius: 8px;
+  }
+  
+  
+  /* Project colors */
+  
+  .one {
+    background: #3f6212;
+  }
+  
+  .two {
+    background: #581c87;
+  }
+  
+  .three {
+    background: #164e63;
+  }
+  
+  .four {
+    background: #92400e;
+  }
+  
+  
+  article h3 {
+    font-size: 24px;
+  
+    margin-bottom: 5px;
+  }
+  
+  article p {
+    color: #888;
+  }
+  
+  
+  /* ABOUT */
+  
+  .about {
+    border-top: 1px solid #333;
+  }
+  
+  .about .section-title span {
+    color: #b8ff3d;
+  }
+  
+  .about-text {
+    max-width: 650px;
+  
+    color: #aaa;
+  
+    font-size: 22px;
+  }
+  
+  
+  /* CONTACT */
+  
+  .contact {
+    border-top: 1px solid #333;
+  }
+  
+  .contact h2 {
+    font-size: clamp(55px, 9vw, 100px);
+  
+    line-height: .9;
+  
+    letter-spacing: -4px;
+  
+    margin-bottom: 40px;
+  }
+  
+  .contact h2 span {
+    color: #b8ff3d;
+  }
+  
+  
+  /* FOOTER */
+  
+  footer {
+    max-width: 1100px;
+  
+    margin: auto;
+  
+    padding: 30px 20px;
+  
+    border-top: 1px solid #333;
+  
+    color: #777;
+  
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  
+  footer div {
+    display: flex;
+    gap: 20px;
+  }
+  
+  footer a {
+    color: #777;
+  
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  
+  
+
+
+
+  .projects a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+    font-weight: bold;
+  }
+  
+  .projects a:hover {
+    color: #555555;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration: none;
+  }
+  
+  .projects a:active {
+    color: #2c2c2c;
+  }
+
+  .project a:visited {
+    color: #222222;
+  }
+
+  
+
+  /* MOBILE */
+  
+  @media (max-width: 700px) {
+  
+    nav {
+      padding: 20px;
+    }
+  
+    .links {
+      gap: 12px;
+  
+      font-size: 14px;
+    }
+  
+    section {
+      padding: 80px 20px;
+    }
+  
+    .hero {
+      min-height: 75vh;
+    }
+  
+    .hero h1 {
+      font-size: 65px;
+  
+      letter-spacing: -3px;
+    }
+  
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  
+    .project-image {
+      height: 250px;
+    }
+  
+    .section-title {
+      font-size: 45px;
+    }
+  
+    .about-text {
+      font-size: 19px;
+    }
+  
+    footer {
+      flex-direction: column;
+  
+      gap: 15px;
+    }
+  
+  }
