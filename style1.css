@@ -1,0 +1,407 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #08080c;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER / NAVIGATION
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8, 8, 12, 0.85);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #202027;
+}
+
+nav {
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+nav h2 span {
+    color: #8b5cf6;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    color: #9999a6;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.links a:hover {
+    color: #ffffff;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 120px 20px;
+}
+
+.small-text {
+    color: #8b5cf6;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background:
+        radial-gradient(
+            circle at 75% 40%,
+            rgba(139, 92, 246, 0.15),
+            transparent 30%
+        );
+}
+
+.hero h1 {
+    font-size: clamp(65px, 11vw, 130px);
+    line-height: 0.88;
+    letter-spacing: -7px;
+    margin-bottom: 35px;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg, #8b5cf6, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro {
+    color: #9b9ba7;
+    max-width: 550px;
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    padding: 14px 23px;
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #6366f1
+    );
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+
+    transition: 0.25s ease;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.35);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.section-title {
+    font-size: clamp(45px, 6vw, 70px);
+    line-height: 1;
+    letter-spacing: -4px;
+    margin-bottom: 55px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.projects article {
+    padding: 18px;
+    background: #101016;
+    border: 1px solid #22222b;
+    border-radius: 14px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.projects article:hover {
+    transform: translateY(-8px);
+    border-color: #8b5cf6;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+/* =========================
+   PROJECT COLORS
+========================= */
+
+.one {
+    background: linear-gradient(
+        135deg,
+        #312e81,
+        #7c3aed
+    );
+}
+
+.two {
+    background: linear-gradient(
+        135deg,
+        #164e63,
+        #0891b2
+    );
+}
+
+.three {
+    background: linear-gradient(
+        135deg,
+        #3f3f46,
+        #18181b
+    );
+}
+
+.four {
+    background: linear-gradient(
+        135deg,
+        #7c2d12,
+        #ea580c
+    );
+}
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.projects article:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* =========================
+   PROJECT TEXT
+========================= */
+
+article h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+article p {
+    color: #777783;
+}
+
+.projects a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+
+.projects a:hover {
+    color: #a78bfa;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    border-top: 1px solid #22222b;
+}
+
+.about .section-title span {
+    color: #8b5cf6;
+}
+
+.about-text {
+    max-width: 700px;
+    color: #a1a1aa;
+    font-size: 22px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    border-top: 1px solid #22222b;
+}
+
+.contact h2 {
+    font-size: clamp(55px, 9vw, 110px);
+    line-height: 0.9;
+    letter-spacing: -6px;
+    margin-bottom: 40px;
+}
+
+.contact h2 span {
+    color: #8b5cf6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    max-width: 1150px;
+    margin: auto;
+    padding: 30px 20px;
+
+    border-top: 1px solid #22222b;
+
+    color: #666672;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+    gap: 20px;
+}
+
+footer a {
+    color: #777783;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 18px;
+    }
+
+    .links {
+        gap: 15px;
+    }
+
+    .links a {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+        letter-spacing: -4px;
+    }
+
+    .intro {
+        font-size: 17px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 240px;
+    }
+
+    .section-title {
+        font-size: 48px;
+    }
+
+    .about-text {
+        font-size: 19px;
+    }
+
+    .contact h2 {
+        font-size: 65px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
